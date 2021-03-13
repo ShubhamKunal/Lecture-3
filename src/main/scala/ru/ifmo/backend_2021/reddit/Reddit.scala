@@ -4,7 +4,7 @@ class RedditMessage(val id: Int, val parentId: Option[Int], val text: String)
 
 class RedditThreadPrinter {
   def printMessages(messages: Array[RedditMessage])(handlePrint: String => Unit): Unit = {
-    handlePrint("")
+    handlePrint("test")
   }
 }
 
