@@ -13,12 +13,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Run FileUtilsTest
-        run: sbt "test:testOnly *FileUtilsTest"
       - name: Run FizzBuzzTest
         run: sbt "test:testOnly *FizzBuzzTest"
       - name: Run MarkupTest
         run: sbt "test:testOnly *MarkupTest"
+      - name: Run FileUtilsTest
+        run: sbt "test:testOnly *FileUtilsTest"
   bonus-tests:
     runs-on: ubuntu-latest
     steps:
