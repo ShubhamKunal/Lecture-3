@@ -22,10 +22,14 @@ class FizzBuzzTest extends AnyFunSuite {
     assert(out == "")
   }
 
-  test("println") {
+  test("string builder") {
     val fizzBuzz = new FizzBuzz()
+    val sb = new StringBuilder
     val out = catchOut {
-      fizzBuzz.flexibleFizzBuzz(s => System.out.print(s + "\n"))
+      fizzBuzz.flexibleFizzBuzz(s => {
+        sb.append(s)
+        sb.append("\n")
+      })
     }
     assert(out == FIZZ_BUZZ_RESULT)
   }
