@@ -2,7 +2,7 @@ package ru.ifmo.backend_2021.markup
 
 trait Markdown {
   def toMarkdown(sb: StringBuilder): StringBuilder = ???
-
+  def toFile(fName: String) = ???
 }
 
 class Paragraph(val elements: Array[Markdown]) extends Markdown
